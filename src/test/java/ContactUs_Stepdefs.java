@@ -29,7 +29,6 @@ public class ContactUs_Stepdefs {
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
-        System.out.println("setup");
     }
 
     @After
@@ -39,7 +38,6 @@ public class ContactUs_Stepdefs {
 
     @Given("I access the webdriver university contact us page")
     public void iAccessTheWebdriverUniversityContactUsPage() {
-        System.out.println("Hello");
         driver.get("https://www.webdriveruniversity.com/Contact-Us/contactus.html");
     }
 
